@@ -279,3 +279,89 @@
     box-shadow: none;
   }
 }
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: .7rem;
+      background-image: url(../img/chevron-thin-right.svg);
+      background-size: cover;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+.recommend {
+  font-size: 1.2rem;
+  color: var(--color-grey-dark-3);
+
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto;
+  }
+
+  &__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff;
+
+    &:not(:last-child) {
+      margin-right: -1.5rem;
+    }
+  }
+}
+
+.review {
+
+  background-color: #fff;
+
+  &__text {
+
+  }
+
+  &__user {
+
+  }
+
+  &__user-box {
+
+  }
+
+  &__user-name {
+
+  }
+
+  &__user-date {
+
+  }
+
+  &__rating {
+
+  }
+}
